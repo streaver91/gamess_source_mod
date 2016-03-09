@@ -2231,13 +2231,17 @@ C
 
       DO 650 I = 1,IGAUSS
          K = K1+I-1
-         EX(K) = EXX(I)*STOSC*STOSC
+         EX(K) = EXX(I)*STOSC*STOSC !scale exponent (either sg basis or slat)
          CSINP(K) = CSS(I)
          CPINP(K) = CPP(I)
          CDINP(K) = CDD(I)
+         CFINP(K) = CFF(I) !JT: add 4F
+         CGINP(K) = CGG(I) !JT: add 5G
          CS(K) = CSINP(K)
          CP(K) = CPINP(K)
          CD(K) = CDINP(K)
+         CF(K) = CFINP(K)  !JT: add 4F
+         CG(K) = CGINP(K)  !JT: add 5G
   650 CONTINUE
 C
 C     IF(NORMP.NE.1) ... UNNORMALIZATION OF THE PRIMITIVE FUNCTIONS.
