@@ -2065,6 +2065,17 @@ C     EXPLICITLY INPUT BY MEANS OF 1S, 2S, 2P, 2SP, ... SHELLS
 C     THIS IS AN UNDOCUMENTED INPUT OPTION.
 C
   600 CONTINUE
+
+!JT fp beg, Flags for STO-NG and GS basis sets
+      IF(ITYP.GE.9 .AND. ITYP.LE.29) then
+        IS_STONG=1
+        IS_GSTO=0
+       ELSEIF(ITYP.GE.30 .and. ITYP.LE.38)  THEN
+         IS_STONG=0
+         IS_GSTO=1
+      ENDIF
+!JT fp end
+
       ATNUM = ZNUC
       NUCZ = INT(ATNUM)
       IF(NUCZ .GT. 54) THEN
