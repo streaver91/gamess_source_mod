@@ -2174,6 +2174,7 @@ C
       STOSC = STOSF(NUCZ,4,0)
       GO TO 640
 C
+C Not yet implemented by GAMESS authors       !JT
   619 CONTINUE
       IF(MASWRK) WRITE(IW,*) 'UNRECOGNIZABLE STO-NG TYPE'
       CALL BERROR(1)
