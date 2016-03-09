@@ -2087,6 +2087,8 @@ C
          CSS(I) = ZERO
          CPP(I) = ZERO
          CDD(I) = ZERO
+         CFF(I) = ZERO !JT add 4F
+         CGG(I) = ZERO !JT add 5G
   630 CONTINUE
       IBRNCH = ITYP-8
 C
