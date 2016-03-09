@@ -2466,6 +2466,15 @@ C
             ELSE
                IF(TEST .LE. 1.0D-12) GO TO 820
             END IF
+C            THRESHOLD=1.0D-08 !JT
+C            WRITE(6,*) 'TEST=',TEST
+C            IF(TEST .LE. THRESHOLD) THEN   !JT
+C             WRITE(6,*) '!!! WARNING: NUMERICAL TEST FOR IDENTIFYING'
+C             WRITE(6,*) 'SYMMETRIC ATOMS INCREASED TO ',THRESHOLD
+C             WRITE(6,*) 'J. TOULOUSE, 24 NOV 2006'
+C             WRITE(6,*) 'END WARNING !!!'
+C             GO TO 820                   !JT
+C            ENDIF                        !JT
   810    CONTINUE
          NUAT = NAT
          NAT = NAT+1
