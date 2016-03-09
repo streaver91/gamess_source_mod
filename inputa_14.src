@@ -1921,6 +1921,8 @@ C      STORED AT DIFFERENT -KSTART- VALUES.
 C
   500 CONTINUE
       NSHELL = NSHELL + 1
+      ISTO1 = ISTO1 + 1                 !JT fp
+      STO_EXPO(ISTO1) = 0               !JT fp
       IF(NSHELL.GT.MXSH) GO TO 1560
       KMIN(NSHELL) = MINF(ITYP)
       KMAX(NSHELL) = MAXF(ITYP)
