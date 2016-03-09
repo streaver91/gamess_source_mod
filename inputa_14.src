@@ -5648,7 +5648,15 @@ C
       END IF
       IF(NORMP .NE. 1) WRITE (IW,9090)
       IF(NORMF .NE. 1) WRITE (IW,9100)
-      WRITE (IW,9110)
+
+      IF(IS_STONG .EQ. 1) THEN !JT
+        WRITE (IW,9111)        !JT
+      ELSEIF(IS_GSTO .EQ. 1) THEN    !fp
+        WRITE (IW,9112)
+      ELSE                     !JT
+        WRITE (IW,9110)
+      ENDIF                    !JT
+
       MLDUDF=0
       MLDNDA=0
 C
