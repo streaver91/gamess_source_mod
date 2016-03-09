@@ -2252,6 +2252,8 @@ C     FOR D SHELLS, THE INPUT COEFFICIENTS CD MUST BE THE COEFFICIENTS
 C     CORRESPONDING TO THE NORMALIZED PRIMITIVE X**2 *EXP(-A*R**2).
 C
   700 CONTINUE
+C!fp note that the normalization includes the normalization of
+C!fp both the spherical harmonics and the radial function
       IF(NORMP .EQ. 1) GO TO 730
       DO 720 IG = K1,K2
          EE = EX(IG)+EX(IG)
