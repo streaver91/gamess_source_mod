@@ -2180,8 +2180,55 @@ C Not yet implemented by GAMESS authors       !JT
       CALL BERROR(1)
       STOSC = ZERO
 C
+C 4F 5G and GS bases
+  621 CALL S4F(EXX,CFF,IGAUSS)                !JT: add 4F
+!JT   STOSC = STOSF(NUCZ,4,1)                 !JT: add 4F, no default scale factor
+      GO TO 640
+
+  622 CALL S5G(EXX,CGG,IGAUSS)                !JT: add 5G
+!JT   STOSC = STOSF(NUCZ,4,1)                 !JT: add 5G, no default scale factor
+      GO TO 640
+C
+  623 CALL GSS(EXX,CSS,IGAUSS)  !fp gs-s type
+      GO TO 640
+C
+  624 CALL GSP(EXX,CPP,IGAUSS)  !fp gs-p type
+      GO TO 640
+C
+  625 CALL GSD(EXX,CDD,IGAUSS)  !fp gs-d type
+      GO TO 640
+C
+  626 CALL GSF(EXX,CFF,IGAUSS)  !fp gs-f type
+      GO TO 640
+C
+  627 CALL GSG(EXX,CGG,IGAUSS)  !fp gs-g type
+      GO TO 640
+C
+  628 CALL GS3S(EXX,CSS,IGAUSS) !fp gs-3s type
+      GO TO 640
+C
+  629 CALL GS3P(EXX,CPP,IGAUSS) !fp gs-3p type
+      GO TO 640
+C
+  630 CALL GS4P(EXX,CPP,IGAUSS) !fp gs-4p type
+      GO TO 640
+C
+  631 CALL GS4D(EXX,CDD,IGAUSS) !fp gs-4d type
+      GO TO 640
+C
+  632 CALL BERROR(1)
+      stop
+
   640 CONTINUE
+
       IF(SCFAC(1) .GT. ZERO) STOSC=SCFAC(1)
+
+!JT beg
+! Save Slater exponents
+!     WRITE(IW,*)'ATOMS: STOSC=',STOSC !JT
+      STO_EXPO(ISTO1) = STOSC
+!JT end
+
       DO 650 I = 1,IGAUSS
          K = K1+I-1
          EX(K) = EXX(I)*STOSC*STOSC
