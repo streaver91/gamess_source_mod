@@ -5632,6 +5632,15 @@ C
 C
 C     ----- PRINT OUT THE BASIS FUNCTIONS USED -----
 C
+!JT, fp beg
+!     WRITE(IW,*)'ATOMS: PRINT THE BASIS SET' !JT
+      IF(IS_STONG .EQ. 1) THEN
+        WRITE(IW,*)'ATOMS: STO-NG TYPE BASIS SET'
+      ELSEIF(IS_GSTO .EQ. 1) THEN
+        WRITE(IW,*)'Gauss-Slater TYPE BASIS SET'
+      ENDIF
+!JT, fp end
+
       IF(NFG.EQ.0) THEN
         WRITE (IW,9080)
       ELSE
