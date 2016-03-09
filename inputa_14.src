@@ -2093,7 +2093,10 @@ C
       IBRNCH = ITYP-8
 C
       GO TO (601,602,603,604,605,606,607,608,609,610,611,
-     *       612,613,614,615,616,617,618,619), IBRNCH
+!JT  *       612,613,614,615,616,617,618,619), IBRNCH
+     *       612,613,614,615,616,617,618,619,
+     *       621,622,                                     !JT add 4F and 5P
+     *       623,624,625,626,627,628,629,630,631,632), IBRNCH         !fp add GS basis and stop if exceeded
 C
   601 CALL S1S(EXX,CSS,IGAUSS)
       STOSC = STOSF(NUCZ,1,0)
