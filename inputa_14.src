@@ -1513,7 +1513,8 @@ C     THEN IT MUST BE EITHER S,P,D,F,G,H,I, OR COMMON EXPONENT L=SP,
 C     OR POSSIBLY ONE OF THE UNDOCUMENTED -STO- INDIVIDUAL SHELLS.
 C
       ITYP = 0
-      DO I=1,27
+!JT   DO I=1,27
+      DO I=1,38                        !JT and fp add 4F and 5G and gauss-slater
          IF(BASIS.EQ.LABEL(I)) ITYP=I
       ENDDO
       IF(ITYP.GT.0) GO TO 500
