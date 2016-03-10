@@ -6,7 +6,7 @@ new_ext=14_
 
 base=~cyrus/qmc_setup/gamess09/source/$file
 mod=~cyrus/qmc_setup/gamess09_modified/source/$file
-new=~junhao/gamess/gamess2014r1_0310mod/source-backup/$file
+new=~junhao/gamess/gamess-current/source/$file
 
 echo Base: $base
 echo New : $new
