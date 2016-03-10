@@ -5784,10 +5784,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
           IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT !fp
            IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-            WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT
+            WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT !JL
             IS_NEXT_FUNCTION = 0 !JT
            ELSE                                                      !JT
-            WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+            WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
            ENDIF                                                     !JT
           ELSE                                                       !JT
             WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5814,10 +5814,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-             WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5844,10 +5844,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
               IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN          !JT fp
                IF(IS_NEXT_FUNCTION .EQ. 1) THEN                         !JT
-             WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5879,10 +5879,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-             WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5909,10 +5909,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-            WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT
+            WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -6106,6 +6106,8 @@ C        RIGIDLY UNCHANGEABLE PART OF THIS FORMAT STATEMENT:
  9140 FORMAT(1X,I6,3X,A2,I7,F22.7,2F18.12)
  9141 FORMAT(I6,3X,A2,x,i1)
  9142 FORMAT(3e36.25)
+ 9143 FORMAT(1X,I3,3X,A5,I4,F22.7,F22.7,4F20.12)                        !JT !fp !JL
+ 9144 FORMAT(1X,I3,3X,A5,I4,22X,F22.7,4F20.12)                          !JT !fp !JL
       END
 C*MODULE INPUTA  *DECK PRTSTAT
       SUBROUTINE PRTSTAT(NFG)
