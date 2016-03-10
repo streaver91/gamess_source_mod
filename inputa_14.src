@@ -4115,7 +4115,17 @@ C     ----- ONE OR MORE ERRORS DETECTED, BLOW THE JOB AWAY -----
 C
       IF(NERR.GT.0) THEN
          IF (MASWRK) WRITE(IW,9200)
+!JT beg 10 Apr 2006
+C Force gamess to continue after detection a possibly wrong error of incompatibility in CONTRL card.
+C A wrong error seems to be found with the combinaison  CI-GUGA/TRUDGE.
+         IF(RUNTYP.NE.TRUDGE)  THEN !JT
          CALL ABRT
+         ELSE                  !JT
+         WRITE(IW,*) 'WARNING: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'  !JT
+         WRITE(IW,*) 'IN ROUTINE START, FORCE GAMESS TO CONTINUE. JT'    !JT
+         WRITE(IW,*) 'WARNING: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'  !JT
+         ENDIF                 !JT
+!JT end 10 Apr 2006
       END IF
 C
 C     THIS IS THE END OF THE CHECKING WITHIN $CONTRL ITSELF
