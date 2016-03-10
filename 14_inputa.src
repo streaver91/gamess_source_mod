@@ -2096,7 +2096,7 @@ C
 !JT  *       612,613,614,615,616,617,618,619), IBRNCH
      *       612,613,614,615,616,617,618,619,
      *       621,622,                                     !JT add 4F and 5P
-     *       623,624,625,626,627,628,629,630,631,632), IBRNCH         !fp add GS basis and stop if exceeded
+     *       623,624,625,626,627,628,629,633,631,632), IBRNCH         !fp add GS basis and stop if exceeded !JL change line num
 C
   601 CALL S1S(EXX,CSS,IGAUSS)
       STOSC = STOSF(NUCZ,1,0)
@@ -2210,7 +2210,7 @@ C
   629 CALL GS3P(EXX,CPP,IGAUSS) !fp gs-3p type
       GO TO 640
 C
-  630 CALL GS4P(EXX,CPP,IGAUSS) !fp gs-4p type
+  633 CALL GS4P(EXX,CPP,IGAUSS) !fp gs-4p type !JL change line num
       GO TO 640
 C
   631 CALL GS4D(EXX,CDD,IGAUSS) !fp gs-4d type
