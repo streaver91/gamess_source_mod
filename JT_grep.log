@@ -1,0 +1,323 @@
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:32:!JT   DIMENSION EXX(6),CSS(6),CPP(6),CDD(6),TTABLE(7),SHTYPS(7)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:33:      DIMENSION EXX(27),CSS(27),CPP(6),CDD(6),TTABLE(7),SHTYPS(7) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:420:!JT   DIMENSION EXX(6),CS(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:421:      DIMENSION EXX(27),CS(27) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:423:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:493:!JT beg 4 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:494:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:1525:!JT end 4 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:1534:!JT   DIMENSION EXX(6),CS(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:1535:      DIMENSION EXX(27),CS(27) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:1537:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:1606:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:1607:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:2637:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:2646:!JT   DIMENSION EXX(6),CP(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:2647:      DIMENSION EXX(23),CP(23) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:2649:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:2718:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:2719:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:3589:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:3688:!JT   DIMENSION EXX(6),CS(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:3689:      DIMENSION EXX(25),CS(25) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:3691:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:3760:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:3761:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:4617:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:4626:!JT   DIMENSION EXX(6),CP(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:4627:      DIMENSION EXX(19),CP(19) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:4629:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:4698:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:4699:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:5249:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:5256:!JT   DIMENSION EXX(6),CS(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:5257:      DIMENSION EXX(19),CS(19) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:5259:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:5328:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:5329:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:5987:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:6196:!JT   DIMENSION EXX(6),CS(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:6197:      DIMENSION EXX(25),CS(25) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:6199:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:6268:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:6269:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7079:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7086:!JT   DIMENSION EXX(6),CP(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7087:      DIMENSION EXX(15),CP(15) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7089:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7158:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7159:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7561:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7567:!JT   DIMENSION EXX(6),CD(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7568:      DIMENSION EXX(17),CD(17) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7570:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7639:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:7640:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8036:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8245:!JT   DIMENSION EXX(6),CS(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8246:      DIMENSION EXX(21),CS(21) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8248:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8317:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8318:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8878:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8885:!JT   DIMENSION EXX(6),CP(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8886:      DIMENSION EXX(18),CP(18) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8888:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8957:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:8958:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9408:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9414:!JT   DIMENSION EXX(6),CD(6)
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9415:      DIMENSION EXX(15),CD(15) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9417:      IF(NGAUSS.LE.6) THEN  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9485:!JT beg 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9486:      ELSE !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9812:!JT end 5 Dec 2007: add STO-NG for N>6 from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:9903:!JT beg: add 4F function from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:10153:!JT end: 6 Jan 2007: add 4F from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:10154:!JT beg: add 5G function from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:10320:!JT end: 6 Jan 2007: add 5G from Alexander Kollias
+/home/cyrus/qmc_setup/gamess09_modified/source/guess.src:2877:!        WRITE (IW,*) 'INIDEN-JT: BEFORE PRINTING INITIAL GUESS ORBITALS' !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/gugdm2.src:417:!JT and CJU
+/home/cyrus/qmc_setup/gamess09_modified/source/gugsrt.src:788:!      THRSHJT=1.E-6   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/gugsrt.src:802:       WRITE(IW,*) 'THRESHOLD USED=',THRSH   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/gugsrt.src:803:       THRSHJT=1.E-6   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/gugsrt.src:808:         WRITE(IW,*) 'CRASH 1' !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/gugsrt.src:809:!JT        WRITE(IW,*) 'WARNING: FORCE GAMESS TO CONTINUE' !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/gugsrt.src:1075:         WRITE(IW,*) 'THRSH=',THRSH   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/gugsrt.src:1076:         WRITE(IW,*) 'CRASH 2' !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:317:!JT   DOUBLE PRECISION LINE,LINEV,LETK,LABEL(27)
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:318:      DOUBLE PRECISION LINE,LINEV,LETK,LABEL(38) !JT and fp add 4F and 5G new slater-gauss basis funcs
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:324:!JT  *          EXX(6),CSS(6),CPP(6),CDD(6),SCFAC(4),
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:325:!JT  *          NBFS(27),MINF(27),MAXF(27),NANGM(27)
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:326:     *          EXX(27),CSS(27),CPP(27),CDD(27),CFF(27),CGG(27),SCFAC(4) !JT: add 4F 5G and larger gaussian expansion
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:327:     *          ,NBFS(38),MINF(38),MAXF(38),NANGM(38)                    !JT fp add 4F and 5G new slater-gauss basis funcs
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:328:      DIMENSION STO_EXPO(MAXGAU)                                         !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:436:!JT  *           8H5S      ,8H5P      ,8H5D      ,8H5SP     ,8H5SPD    /
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:438:     *           8H4F      ,8H5G      ,                                  !JT add 4F and 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:442:!JT   DATA NBFS/ 1, 3, 6,10,15,21,28,    4,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:443:!JT  *           1, 1, 3, 4,             1, 3, 6, 4,10,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:444:!JT  *           1, 3, 6, 4,10,          1, 3, 6, 4,10/
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:445:!JT   DATA MINF/ 1, 2, 5,11,21,36,57,    1,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:446:!JT  *           1, 1, 2, 1,             1, 2, 5, 1, 1,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:447:!JT  *           1, 2, 5, 1, 1,          1, 2, 5, 1, 1/
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:448:!JT   DATA MAXF/ 1, 4,10,20,35,56,84,    4,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:449:!JT  *           1, 1, 4, 4,             1, 4,10, 4,10,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:450:!JT  *           1, 4,10, 4,10,          1, 4,10, 4,10/
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:451:!JT   DATA NANGM/1, 2, 3, 4, 5, 6, 7,    2,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:452:!JT  *           1, 1, 2, 2,             1, 2, 3, 2, 3,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:453:!JT  *           1, 2, 3, 2, 3,          1, 2, 3, 2, 3/
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:457:     *           10,15,                                                  !JT: add 4F and 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:462:     *           11,21,                                                  !JT: add 4F and 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:467:     *           20,35,                                                  !JT: add 4F and 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:472:     *           4, 5,                                                   !JT: add 4F and 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:480:!JT fp beg
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:487:!JT fp end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1140:!JT   DO I=1,27
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1141:      DO I=1,38                        !JT and fp add 4F and 5G and gauss-slater
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1481:      ISTO1 = ISTO1 + 1                 !JT fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1482:      STO_EXPO(ISTO1) = 0               !JT fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1587:!JT fp beg, Flags for STO-NG and GS basis sets
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1595:!JT fp end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1605:         CFF(I) = ZERO !JT add 4F
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1606:         CGG(I) = ZERO !JT add 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1612:!JT  *       612,613,614,615,616,617,618,619), IBRNCH
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1614:     *       621,622,                                     !JT add 4F and 5P
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1692:C Not yet implemented by GAMESS authors       !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1697:  621 CALL S4F(EXX,CFF,IGAUSS)                !JT: add 4F
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1698:!JT   STOSC = STOSF(NUCZ,4,1)                 !JT: add 4F, no default scale factor
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1701:  622 CALL S5G(EXX,CGG,IGAUSS)                !JT: add 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1702:!JT   STOSC = STOSF(NUCZ,4,1)                 !JT: add 5G, no default scale factor
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1739:!JT beg
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1741:!     WRITE(IW,*)'ATOMS: STOSC=',STOSC !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1743:!JT end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1751:         CFINP(K) = CFF(I) !JT: add 4F
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1752:         CGINP(K) = CGG(I) !JT: add 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1756:         CF(K) = CFINP(K)  !JT: add 4F
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1757:         CG(K) = CGINP(K)  !JT: add 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1958:C            THRESHOLD=1.0D-08 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1960:C            IF(TEST .LE. THRESHOLD) THEN   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1965:C             GO TO 820                   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1966:C            ENDIF                        !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2149:!JT, fp beg
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2150:!     WRITE(IW,*)'ATOMS: PRINT THE BASIS SET' !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2156:!JT, fp end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2167:      IF(IS_STONG .EQ. 1) THEN !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2168:        WRITE (IW,9111)        !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2171:      ELSE                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2173:      ENDIF                    !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2200:!JT beg
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2204:!           WRITE (IW,*) 'BEGIN NEW FUNCTION' !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2205:            IS_NEXT_FUNCTION = 1    !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2206:            ISTO2 = ISTO2 + 1   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2207:!JT end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2259:!JT  *                1320,1330,1340,1350,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2260:!JT  *                1280,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2261:!JT  *                1280,1290,     1350,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2262:!JT  *                1280,1290,1300,1350,1360,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2263:!JT  *                1280,1290,1300,1350,1360,
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2264:!JT  *                1280,1290,1300,1350,1360), ITYP
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2270:     *                1310,1320,                           !JT: add 4F and 5G
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2275: 1279          CONTINUE  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2276:               IF(IS_STONG .EQ. 1) THEN !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2281:               CALL ABRT        !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2285:!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2286:          IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2287:           IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2288:            WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2289:            IS_NEXT_FUNCTION = 0 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2290:           ELSE                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2291:            WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2292:           ENDIF                                                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2293:          ELSE                                                       !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2295:          ENDIF                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2296:!JT end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2310:!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2311:             IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2312:              IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2313:             WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2314:                 IS_NEXT_FUNCTION = 0                                   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2315:              ELSE                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2316:               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2317:              ENDIF                                                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2318:             ELSE                                                       !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2320:             ENDIF                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2321:!JT end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2334:!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2335:              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN          !JT fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2336:               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                         !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2337:             WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2338:                 IS_NEXT_FUNCTION = 0                                   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2339:              ELSE                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2340:               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2341:              ENDIF                                                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2342:             ELSE                                                       !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2344:             ENDIF                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2345:!JT end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2358:!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2359:             IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2360:              IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2361:             WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2362:                 IS_NEXT_FUNCTION = 0                                   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2363:              ELSE                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2364:               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2365:              ENDIF                                                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2366:             ELSE                                                       !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2368:             ENDIF                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2369:!JT end
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2382:!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2383:             IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2384:              IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2385:            WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2386:                 IS_NEXT_FUNCTION = 0                                   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2387:              ELSE                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2388:               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2389:              ENDIF                                                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2390:             ELSE                                                       !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2392:             ENDIF                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2406:!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2407:             IF(IS_STONG .EQ. 1) THEN                                   !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2408:               WRITE(IW,*) 'PRINTING OF STO-NG BASIS SET'               !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2409:               WRITE(IW,*) 'NOT IMPLEMENTED FOR L FUNCTIONS'            !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2410:               STOP                                                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2414:               STOP                                                     !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2415:              ELSE                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2417:             ENDIF                                                      !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2808: 9111 FORMAT(/1X,'SHELL TYPE PRIMITIVE    SLATER EXPONENT     EXPONENT',!JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2809:     *     10X,'CONTRACTION COEFFICIENTS')                              !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2810: 9112 FORMAT(/1X,'SHELL TYPE PRIMITIVE    GAUSS-SLAT EXP      EXPONENT',!JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2811:     *       10X,'CONTRACTION COEFFICIENTS')                            !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2818: 9141 FORMAT(1X,I3,3X,A5,I4,F22.7,F22.7,4F20.12)                        !JT !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2819: 9142 FORMAT(1X,I3,3X,A5,I4,22X,F22.7,4F20.12)                          !JT !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3769:!JT beg 10 Apr 2006
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3772:         IF(RUNTYP.NE.TRUDGE)  THEN !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3774:         ELSE                  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3775:         WRITE(IW,*) 'WARNING: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3776:         WRITE(IW,*) 'IN ROUTINE START, FORCE GAMESS TO CONTINUE. JT'    !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3777:         WRITE(IW,*) 'WARNING: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3778:         ENDIF                 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:3779:!JT end 10 Apr 2006
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:742:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1544:!JT   CHARACTER*4 BFNAM1(35) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1545:      CHARACTER*5 BFNAM1(35) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1548:!JT   CHARACTER*8 BFL
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1549:      CHARACTER*9 BFL !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1553:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1565:!JT   COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1566:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1567:     *                BFLAB2 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1569:!JT   DATA BFNAM1/'  S ','  X ','  Y ','  Z ',
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1570:!JT  *            ' XX ',' YY ',' ZZ ',' XY ',' XZ ',' YZ ',
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1571:!JT  *            ' XXX',' YYY',' ZZZ',' XXY',' XXZ',
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1572:!JT  *            ' YYX',' YYZ',' ZZX',' ZZY',' XYZ',
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1573:!JT  *            'XXXX','YYYY','ZZZZ','XXXY','XXXZ',
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1574:!JT  *            'YYYX','YYYZ','ZZZX','ZZZY','XXYY',
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1575:!JT  *            'XXZZ','YYZZ','XXYZ','YYXZ','ZZXY'/
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1582:     *            ' XXZZ',' YYZZ',' XXYZ',' YYXZ',' ZZXY'/ !JT add blank
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1637:!!JT        WRITE(UNIT=BFL,FMT='(A2,I2,A4)') LABEL,MOD(IAT,100),BFNAM(I)
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1638:!!JT        READ (UNIT=BFL,FMT='(A8)') BFLAB(N)
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1639:!           WRITE(UNIT=BFL,FMT='(A2,I2,A5)') LABEL,MOD(IAT,100),BFNAM(I) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1640:!!JT        WRITE(6,'(A,A9)') 'BFL=',BFL !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1641:!           READ (UNIT=BFL,FMT='(A8)') BFLAB(N) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1642:!           READ (UNIT=BFL,FMT='(A9)') BFLAB2(N) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1643:!!JT        WRITE(6,'(A,A8)') 'BFLAB(N)=',BFLAB(N) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1644:!!JT        WRITE(6,'(A,A9)') 'BFLAB2(N)=',BFLAB2(N) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:1653:            READ (UNIT=BFL,FMT='(A8)') BFLAB2(N)            !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mcqdpt.src:15292:     &'' but only first 10000 are being written out'')') ncsf !JT and CJU
+/home/cyrus/qmc_setup/gamess09_modified/source/mcqdpt.src:15339:     &       ICSF,CIVEC(ICSF,ISTATE),(COCC(ICASE(IMO)),IMO=1,NMOACT) !JT and CJU
+/home/cyrus/qmc_setup/gamess09_modified/source/mcqdpt.src:15348:!JT 102 FORMAT(1X,I8,F12.6,2X,50A1,(/23X,50A1))
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:2013:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:2647:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:2672:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:2673:     *                BFLAB2 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3082:!JT 9120 FORMAT(1X,I8,F12.6,2X,50I1,(/23X,50I1))
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3100:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3107:!JT      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3108:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3109:     *                BFLAB2 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3129:!JT         WRITE (IW,9048) J,BFLAB(J),(V(J,I),I = IMIN,IMAX)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3130:         WRITE (IW,9048) J,BFLAB2(J),(V(J,I),I = IMIN,IMAX) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3131:!JT         WRITE(IW,*) 'PREV: BFLAB(J)=',BFLAB(J) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3142:!JT 9028 FORMAT(15X,10(4X,I4,3X))
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3143: 9028 FORMAT(16X,10(5X,I4,6X)) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3145:!JT 9048 FORMAT(I5,2X,A8,10F11.6)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3146: 9048 FORMAT(I5,2X,A9,15F15.9) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3148:!JT 9068 FORMAT(15X,10F11.4)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3149: 9068 FORMAT(16X,15F15.9) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3204:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3211:!JT      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3212:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3213:     *                BFLAB2 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3231:!JT         WRITE (IW,9048) J,BFLAB(J),(V(J,I),I = IMIN,IMAX)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3232:         WRITE (IW,9048) J,BFLAB2(J),(V(J,I),I = IMIN,IMAX) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3233:!JT         WRITE(IW,'(A,A9)') 'MTHLIB: BFLAB(J)=',BFLAB(J) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3244:!JT 9028 FORMAT(15X,10(4X,I4,3X))
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3245: 9028 FORMAT(16X,10(5X,I4,6X)) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3247:!JT 9048 FORMAT(I5,2X,A8,10F11.6)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3248: 9048 FORMAT(I5,2X,A9,15F15.9) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3250:!JT 9068 FORMAT(15X,10F11.4)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3251: 9068 FORMAT(16X,15F15.9) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3253:!JT 9078 FORMAT(16X,10(5X,A4,2X))
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3254: 9078 FORMAT(17X,10(6X,A4,5X))  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3302:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3309:!JT    COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3310:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3327:!JT  120 WRITE (IW,9048) J,BFLAB(J),(V(J,I),I = IMIN,IMAX)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3328:  120 WRITE (IW,9048) J,BFLAB2(J),(V(J,I),I = IMIN,IMAX) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3334:!JT 9048 FORMAT(I5,2X,A8,10F11.6)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3335: 9048 FORMAT(I5,2X,A9,10F11.6) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3384:      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3391:!JT      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3392:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3393:     *                BFLAB2 !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3412:!JT            WRITE(IW,9048) I,BFLAB(I),(D(J),J=J0,JL)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3413:            WRITE(IW,9048) I,BFLAB2(I),(D(J),J=J0,JL) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3414:!JT            WRITE(IW,*) 'BFLAB(I)=',BFLAB(I) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3421:!JT 9048 FORMAT(I5,2X,A8,10F11.6)
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:3422: 9048 FORMAT(I5,2X,A9,10F11.6) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/trudge.src:69:      DIMENSION PPP(10) !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/trudge.src:70:      COMMON /PPP/ PPP  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/trudge.src:155:!JT beg 10 Apr 2005
+/home/cyrus/qmc_setup/gamess09_modified/source/trudge.src:168:!JT end 10 Apr 2005
+/home/cyrus/qmc_setup/gamess09_modified/source/trudge.src:219:      COMMON /PPP/ PPP  !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/trudge.src:305:         WRITE(IW,*) 'PARAMETERS:' !JT
+/home/cyrus/qmc_setup/gamess09_modified/source/trudge.src:333: 9993 FORMAT(1X,'        P(1)=',10F10.6) !JT

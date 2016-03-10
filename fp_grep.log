@@ -1,0 +1,33 @@
+/home/cyrus/qmc_setup/gamess09_modified/source/bassto.src:10323:!fp add gauss slater basis
+/home/cyrus/qmc_setup/gamess09_modified/source/eomcc.src:750:      I7   = I6     + NO2U2          !FPP
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:440:     *           8HGS-3S   ,8HGS-3P   ,8HGS-4P   ,8HGS-4D   /            !fp added labels for new basis functions
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:458:     *           1,3,6,10,15,            1,3,3,6/                        !fp add gauss-slater basis funcs
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:463:     *           1,2,5,11,21,            1,2,2,5/                        !fp add gauss-slater basis funcs
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:468:     *           1,4,10,20,35,           1,4,4,10/                       !fp add gauss-slater basis funcs
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:473:     *           1,2,3,4,5,              1,2,2,3/                        !fp add gauss-slater basis funcs
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1615:     *       623,624,625,626,627,628,629,630,631,632), IBRNCH         !fp add GS basis and stop if exceeded
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1705:  623 CALL GSS(EXX,CSS,IGAUSS)  !fp gs-s type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1708:  624 CALL GSP(EXX,CPP,IGAUSS)  !fp gs-p type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1711:  625 CALL GSD(EXX,CDD,IGAUSS)  !fp gs-d type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1714:  626 CALL GSF(EXX,CFF,IGAUSS)  !fp gs-f type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1717:  627 CALL GSG(EXX,CGG,IGAUSS)  !fp gs-g type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1720:  628 CALL GS3S(EXX,CSS,IGAUSS) !fp gs-3s type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1723:  629 CALL GS3P(EXX,CPP,IGAUSS) !fp gs-3p type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1726:  630 CALL GS4P(EXX,CPP,IGAUSS) !fp gs-4p type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1729:  631 CALL GS4D(EXX,CDD,IGAUSS) !fp gs-4d type
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1770:C!fp note that the normalization includes the normalization of
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:1771:C!fp both the spherical harmonics and the radial function
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2169:      ELSEIF(IS_GSTO .EQ. 1) THEN    !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2271:     *                1280,1290,1300,1310,1320,  !fp add gauss-slater basis
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2272:     *                1280,1290,1290,1300), ITYP !fp add gauss-slater basis
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2278:               ELSEIF(IS_GSTO .EQ. 1) THEN !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2286:          IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2411:             ELSEIF(IS_GSTO .EQ. 1) THEN                                !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2412:               WRITE(IW,*) 'PRINTING OF GAUSS-SLATER BASIS SET'         !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2413:               WRITE(IW,*) 'NOT IMPLEMENTED FOR L FUNCTIONS'            !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2818: 9141 FORMAT(1X,I3,3X,A5,I4,F22.7,F22.7,4F20.12)                        !JT !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputa.src:2819: 9142 FORMAT(1X,I3,3X,A5,I4,22X,F22.7,4F20.12)                          !JT !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:759:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/inputb.src:760:     *                BFLAB2 !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:2027:      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !fp
+/home/cyrus/qmc_setup/gamess09_modified/source/mthlib.src:2028:     *                BFLAB2 !fp
