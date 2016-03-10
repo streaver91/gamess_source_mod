@@ -5925,7 +5925,18 @@ C
 C
  1330          CONTINUE
                C1=CHINP(IG)
-               WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+             IF(IS_STONG .EQ. 1) THEN                                   !JT
+               WRITE(IW,*) 'PRINTING OF STO-NG BASIS SET'               !JT
+               WRITE(IW,*) 'NOT IMPLEMENTED FOR L FUNCTIONS'            !JT
+               STOP                                                     !JT
+             ELSEIF(IS_GSTO .EQ. 1) THEN                                !fp
+               WRITE(IW,*) 'PRINTING OF GAUSS-SLATER BASIS SET'         !fp
+               WRITE(IW,*) 'NOT IMPLEMENTED FOR L FUNCTIONS'            !fp
+               STOP                                                     !JT
+              ELSE                                                      !JT
+               WRITE (IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+             ENDIF                                                      !JT
 C
                IF(EXCORR.AND.MASWRK)THEN
                   IF(IG.EQ.I1)WRITE(98,9141) IAT,LABEL(ITYP),ISPHER
