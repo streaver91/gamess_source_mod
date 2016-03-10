@@ -1,0 +1,384 @@
+Merging: aldeci.src
+Merging: algnci.src
+Merging: basccn.src
+merge: warning: conflicts during merge
+Merging: basecp.src
+Merging: basext.src
+Merging: basg3l.src
+Merging: basg3x.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/basg3x.src: No such file or directory
+Merging: bashuz.src
+Merging: bashz2.src
+Merging: baskar.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/baskar.src: No such file or directory
+Merging: basn21.src
+Merging: basn31.src
+Merging: baspcn.src
+Merging: bassto.src
+Merging: blas.src
+Merging: casino.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/casino.src: No such file or directory
+Merging: ccaux.src
+Merging: ccddi.src
+Merging: cchdmy.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cchdmy.src: No such file or directory
+Merging: cchem.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cchem.src: No such file or directory
+Merging: ccqaux.src
+Merging: ccquad.src
+Merging: ccsdt.src
+Merging: ceeis.src
+Merging: cepa.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cepa.src: No such file or directory
+Merging: chgpen.src
+merge: warning: conflicts during merge
+Merging: cimf.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cimf.src: No such file or directory
+Merging: ciminf.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/ciminf.src: No such file or directory
+Merging: cimi.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cimi.src: No such file or directory
+Merging: cimlib.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cimlib.src: No such file or directory
+Merging: cimsub.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cimsub.src: No such file or directory
+Merging: cisgrd.src
+Merging: comp.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/comp.src: No such file or directory
+Merging: cosmo.src
+Merging: cosprt.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cosprt.src: No such file or directory
+Merging: cphf.src
+Merging: cpmchf.src
+Merging: cprohf.src
+Merging: cpuhf.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/cpuhf.src: No such file or directory
+Merging: dccc.src
+Merging: dcgrd.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dcgrd.src: No such file or directory
+Merging: dcgues.src
+Merging: dcint2.src
+Merging: dclib.src
+Merging: dcmp2.src
+merge: warning: conflicts during merge
+Merging: dcscf.src
+Merging: dctran.src
+Merging: ddilib.src
+Merging: delocl.src
+Merging: demrpt.src
+Merging: dftaux.src
+Merging: dftbfo.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftbfo.src: No such file or directory
+Merging: dftbgr.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftbgr.src: No such file or directory
+Merging: dftbhs.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftbhs.src: No such file or directory
+Merging: dftblb.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftblb.src: No such file or directory
+Merging: dftbsk.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftbsk.src: No such file or directory
+Merging: dftbx.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftbx.src: No such file or directory
+Merging: dftdis.src
+Merging: dftfun.src
+Merging: dftgrd.src
+Merging: dftint.src
+Merging: dft.src
+Merging: dftxca.src
+Merging: dftxcb.src
+Merging: dftxcc.src
+Merging: dftxcd.src
+Merging: dftxce.src
+Merging: dftxcf.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftxcf.src: No such file or directory
+Merging: dftxcg.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/dftxcg.src: No such file or directory
+Merging: dgeev.src
+Merging: dgesvd.src
+Merging: diab.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/diab.src: No such file or directory
+Merging: dmulti.src
+Merging: drc.src
+Merging: eaipcc.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/eaipcc.src: No such file or directory
+Merging: ecpder.src
+Merging: ecplib.src
+Merging: ecppot.src
+Merging: ecp.src
+Merging: efchtr.src
+Merging: efdrvr.src
+merge: warning: conflicts during merge
+Merging: efelec.src
+merge: warning: conflicts during merge
+Merging: efgrd2.src
+Merging: efgrda.src
+Merging: efgrdb.src
+Merging: efgrdc.src
+Merging: efinp.src
+merge: warning: conflicts during merge
+Merging: efinta.src
+merge: warning: conflicts during merge
+Merging: efintb.src
+Merging: efmo.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/efmo.src: No such file or directory
+Merging: efpaul.src
+Merging: efpcm.src
+Merging: efpcov.src
+Merging: efpfmo.src
+Merging: eftei.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/eftei.src: No such file or directory
+Merging: eigen.src
+Merging: elglib.src
+Merging: elgloc.src
+Merging: elgscf.src
+Merging: eomcc.src
+Merging: ewald.src
+Merging: excorr.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/excorr.src: No such file or directory
+Merging: ffield.src
+Merging: fmocp.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/fmocp.src: No such file or directory
+Merging: fmoesd.src
+merge: warning: conflicts during merge
+Merging: fmogrd.src
+merge: warning: conflicts during merge
+Merging: fmoh1a.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/fmoh1a.src: No such file or directory
+Merging: fmoh2a.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/fmoh2a.src: No such file or directory
+Merging: fmoh2b.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/fmoh2b.src: No such file or directory
+Merging: fmohss.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/fmohss.src: No such file or directory
+Merging: fmoint.src
+merge: warning: conflicts during merge
+Merging: fmoio.src
+merge: warning: conflicts during merge
+Merging: fmolib.src
+merge: warning: conflicts during merge
+Merging: fmomm.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/fmomm.src: No such file or directory
+Merging: fmopbc.src
+merge: warning: conflicts during merge
+Merging: fmoprp.src
+merge: warning: conflicts during merge
+Merging: fmo.src
+merge: warning: conflicts during merge
+Merging: frfmt.src
+Merging: fsodci.src
+Merging: g3.src
+Merging: gamess.src
+Merging: ga.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/ga.src: No such file or directory
+Merging: globop.src
+merge: warning: conflicts during merge
+Merging: gmcpt.src
+Merging: gradex.src
+Merging: grd1.src
+Merging: grd2a.src
+Merging: grd2b.src
+Merging: grd2c.src
+Merging: guess.src
+Merging: gugdga.src
+Merging: gugdgb.src
+Merging: gugdm2.src
+Merging: gugdm.src
+Merging: gugdrt.src
+Merging: gugem.src
+Merging: gugsrt.src
+Merging: gvb.src
+Merging: hess.src
+Merging: hss1a.src
+Merging: hss1b.src
+Merging: hss2a.src
+Merging: hss2b.src
+Merging: inputa.src
+merge: warning: conflicts during merge
+Merging: inputb.src
+Merging: inputc.src
+Merging: int1.src
+Merging: int2a.src
+Merging: int2b.src
+Merging: int2c.src
+merge: warning: conflicts during merge
+Merging: int2d.src
+merge: warning: conflicts during merge
+Merging: int2f.src
+merge: warning: conflicts during merge
+Merging: int2g.src
+merge: warning: conflicts during merge
+Merging: int2r.src
+merge: warning: conflicts during merge
+Merging: int2s.src
+Merging: iolib.src
+Merging: ivocas.src
+Merging: lagran.src
+Merging: local.src
+merge: warning: conflicts during merge
+Merging: loccd.src
+Merging: locpol.src
+merge: warning: conflicts during merge
+Merging: locsvd.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/locsvd.src: No such file or directory
+Merging: lrd.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/lrd.src: No such file or directory
+Merging: mccas.src
+Merging: mcjac.src
+Merging: mcpgrd.src
+merge: warning: conflicts during merge
+Merging: mcpinp.src
+Merging: mcpint.src
+Merging: mcpl10.src
+Merging: mcpl20.src
+Merging: mcpl30.src
+Merging: mcpl40.src
+Merging: mcpl50.src
+Merging: mcpl60.src
+Merging: mcpl70.src
+Merging: mcpl80.src
+Merging: mcqdpt.src
+Merging: mcqdwt.src
+Merging: mcqud.src
+Merging: mcscf.src
+Merging: mctwo.src
+Merging: mdefp.src
+merge: warning: conflicts during merge
+Merging: mexing.src
+Merging: mltfmo.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/mltfmo.src: No such file or directory
+Merging: mm23.src
+Merging: mnsol.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/mnsol.src: No such file or directory
+Merging: morokm.src
+merge: warning: conflicts during merge
+Merging: mp2ddi.src
+Merging: mp2gr2.src
+Merging: mp2grd.src
+Merging: mp2ims.src
+Merging: mp2.src
+Merging: mpcdatpm6.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/mpcdatpm6.src: No such file or directory
+Merging: mpcdat.src
+Merging: mpcgrd.src
+Merging: mpchbond.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/mpchbond.src: No such file or directory
+Merging: mpcint.src
+Merging: mpcmol.src
+Merging: mpcmsc.src
+Merging: mpcpcm.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/mpcpcm.src: No such file or directory
+Merging: mpqcst.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/mpqcst.src: No such file or directory
+Merging: mthlib.src
+Merging: nameio.src
+Merging: nbostb.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/nbostb.src: No such file or directory
+Merging: neostb.src
+Merging: nmr.src
+Merging: optcix.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/optcix.src: No such file or directory
+Merging: ordint.src
+Merging: ormas1.src
+Merging: ormpt2.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/ormpt2.src: No such file or directory
+Merging: parley.src
+Merging: pcmcav.src
+Merging: pcmcv2.src
+merge: warning: conflicts during merge
+Merging: pcmder.src
+Merging: pcmdis.src
+Merging: pcmief.src
+Merging: pcmpol.src
+Merging: pcm.src
+Merging: pcmvch.src
+Merging: prpamm.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/prpamm.src: No such file or directory
+Merging: prpel.src
+merge: warning: conflicts during merge
+Merging: prplib.src
+merge: warning: conflicts during merge
+Merging: prppop.src
+Merging: qeigen.src
+Merging: qfmm.src
+merge: warning: conflicts during merge
+Merging: qmfm.src
+Merging: qmmm.src
+Merging: qrel.src
+Merging: quanpo.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/quanpo.src: No such file or directory
+Merging: raman.src
+Merging: rhfuhf.src
+Merging: ricab.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/ricab.src: No such file or directory
+Merging: riint.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/riint.src: No such file or directory
+Merging: rimp2.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/rimp2.src: No such file or directory
+Merging: rmddat.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/rmddat.src: No such file or directory
+Merging: rmdgen.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/rmdgen.src: No such file or directory
+Merging: rmd.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/rmd.src: No such file or directory
+Merging: rmdwrk.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/rmdwrk.src: No such file or directory
+Merging: roeom.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/roeom.src: No such file or directory
+Merging: rohfcc.src
+Merging: rxncrd.src
+Merging: ryspol.src
+Merging: scflib.src
+Merging: scfmi.src
+Merging: scrf.src
+Merging: sfdft.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/sfdft.src: No such file or directory
+Merging: sfgrad.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/sfgrad.src: No such file or directory
+Merging: sobrt.src
+Merging: soffac.src
+Merging: solib.src
+Merging: sozeff.src
+Merging: statpt.src
+Merging: surf.src
+Merging: svpchg.src
+Merging: svpinp.src
+Merging: svpleb.src
+Merging: symhi.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/symhi.src: No such file or directory
+Merging: symorb.src
+Merging: symslc.src
+Merging: tddefp.src
+Merging: tddft.src
+Merging: tddfun.src
+Merging: tddfxc.src
+Merging: tddgrd.src
+Merging: tddint.src
+Merging: tddnlr.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/tddnlr.src: No such file or directory
+Merging: tddxca.src
+Merging: tddxcc.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/tddxcc.src: No such file or directory
+Merging: tddxcd.src
+/usr/bin/diff3: /home/cyrus/qmc_setup/gamess09/source/tddxcd.src: No such file or directory
+Merging: tdhf.src
+Merging: tdxio.src
+Merging: tdxitr.src
+Merging: tdxni.src
+Merging: tdxprp.src
+Merging: tdx.src
+merge: warning: conflicts during merge
+Merging: trans.src
+Merging: trfdm2.src
+Merging: trnstn.src
+Merging: trudge.src
+Merging: umpddi.src
+Merging: unport.src
+Merging: utddft.src
+Merging: vector.src
+Merging: vibanl.src
+Merging: vscf.src
+merge: warning: conflicts during merge
+Merging: vvos.src
+Merging: zapddi.src
+Merging: zheev.src
+Merging: zmatrx.src
