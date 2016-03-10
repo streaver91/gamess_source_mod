@@ -5745,16 +5745,44 @@ C         9-27 ARE ARCHAIC UNDOCUMENTED STO SUBSHELLS STRINGS, WHICH
 C         CONSIST OF S,P,D,L AND UNIMPLEMENTED -M- SHELLS.
 C
                GO TO (1280,1290,1300,1310,
+!JT  *                1320,1330,1340,1350,
+!JT  *                1280,
+!JT  *                1280,1290,     1350,
+!JT  *                1280,1290,1300,1350,1360,
+!JT  *                1280,1290,1300,1350,1360,
+!JT  *                1280,1290,1300,1350,1360), ITYP
      *                1320,1330,1340,1350,
-     *                1280,
-     *                1280,1290,     1350,
+     *                1280,1280,1290,1350,
      *                1280,1290,1300,1350,1360,
      *                1280,1290,1300,1350,1360,
-     *                1280,1290,1300,1350,1360), ITYP
+     *                1280,1290,1300,1350,1360,
+     *                1310,1320,                           !JT: add 4F and 5G
+     *                1280,1290,1300,1310,1320,  !fp add gauss-slater basis
+     *                1280,1290,1290,1300), ITYP !fp add gauss-slater basis
+
 C
+ 1279          CONTINUE  !JT
+               IF(IS_STONG .EQ. 1) THEN !JT
+                  WRITE(6,*) 'PROBLEM WITH STO-NG BASIS (J.TOULOUSE)'
+               ELSEIF(IS_GSTO .EQ. 1) THEN !fp
+                  WRITE(6,*) 'PROBLEM:Gauss-Slater BASIS (F.Petruzielo)'
+               ENDIF
+               CALL ABRT        !JT
+
  1280          CONTINUE
                C1=CSINP(IG)
-               WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+          IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT !fp
+           IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
+            WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT
+            IS_NEXT_FUNCTION = 0 !JT
+           ELSE                                                      !JT
+            WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+           ENDIF                                                     !JT
+          ELSE                                                       !JT
+            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+          ENDIF                                                      !JT
+!JT end
 C
                IF(EXCORR.AND.MASWRK)THEN
                   IF(IG.EQ.I1)WRITE(98,9141) IAT,LABEL(ITYP)
