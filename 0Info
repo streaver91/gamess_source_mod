@@ -1,0 +1,14 @@
+Documentation for compiling GAMESS is in misc/readme_unix.
+
+Since GAMESS does not have a Makefile one has to edit several scripts
+(comp, compall, lked, ddi/compddi for compiling and rungms runall for running)
+and make a few changes (mostly setting the path to qmc_setup/gamess09_modified).
+lked was modified to turn off mkl
+
+We have modified the following 8 routines:
+bassto.src guess.src gugsrt.src gvb.src inputa.src inputb.src mthlib.src symslc.src trudge.src mcqdpt.src
+
+So to recompile and link after modifying just these routines I modified compall to make comp_part
+that compiles just these routines (listed around line 180):
+./comp_part >& compall.log &
+./lked gamess 00 >& lked.log &
