@@ -15705,8 +15705,6 @@ C
 C
 C     LOOP FOR STATES
 C
-      if(ncsf.gt.10000) write(6,'(''Warning: ncsf='',i9,
-     &'' but only first 10000 are being written out'')') ncsf !JT and CJU
       DO ISTATE=1,NSTATE
         IF (MASWRK) WRITE (LUNOUT,100) ISTATE,EIGVAL(ISTATE)
 C
@@ -15752,8 +15750,8 @@ C
 C
 C           PRINT CSF LABEL, CI COEFFICENT, AND CONFIGURATION
 C
-            IF (MASWRK .and. icsf.le.10000) WRITE(LUNOUT,102)
-     &       ICSF,CIVEC(ICSF,ISTATE),(COCC(ICASE(IMO)),IMO=1,NMOACT) !JT and CJU
+            IF (MASWRK) WRITE(LUNOUT,102) ICSF,CIVEC(ICSF,ISTATE),
+     $        (COCC(ICASE(IMO)),IMO=1,NMOACT)
 C
           END IF
         END DO
@@ -15762,8 +15760,7 @@ C
   100 FORMAT(/1X,'STATE #',I5,'  ENERGY =',F18.9//
      *  6X,'CSF',6X,'COEF',4X,'OCCUPANCY (IGNORING CORE)'/
      *  6X,'---',6X,'----',4X,'--------- --------- -----')
-!JT 102 FORMAT(1X,I8,F12.6,2X,50A1,(/23X,50A1))
-  102 FORMAT(1X,I8,F15.9,2X,50A1,(/23X,50A1))
+  102 FORMAT(1X,I8,F12.6,2X,50A1,(/23X,50A1))
       END
 C
 C*MODULE MCQDPT  *DECK MQGNR2

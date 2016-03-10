@@ -1108,8 +1108,6 @@ C
       PARAMETER (MAXA=103, MAXL=7)
       PARAMETER (MXCHRM=1)
 C
-      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
-
       COMMON /BASISC/ GBASIS,AEX(MAXA,MAXL),ABASIS(MAXA,MAXL),
      *                IAGAUS(MAXA,MAXL),IRDBAS
       COMMON /CHMGMS/ XCHM(MXCHRM),YCHM(MXCHRM),ZCHM(MXCHRM),
@@ -1125,9 +1123,7 @@ C
       COMMON /PAR   / ME,MASTER,NPROC,IBTYP,IPTIM,GOPARR,DSKWRK,MASWRK
       COMMON /RELWFN/ RMETHOD,QRQMT,CLIG,CLIG2,QRTOL,IQRORD,MODQR,NESOC,
      *                NRATOM,NUMU,NQMTR,NQRDAF,MORDA,NDARELB
-C      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
-      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !fp
-     *                BFLAB2 !fp
+      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
       COMMON /RUNOPT/ RUNTYP,EXETYP,NEVALS,NGLEVL,NHLEVL
 C
       DATA ANONE/8HNONE    /
@@ -1921,23 +1917,18 @@ C
       RIJ = SQRT(RIJSQ)
       RETURN
       END
-
 C*MODULE INPUTB  *DECK SETLAB
       SUBROUTINE SETLAB(IARG,ATMSYM)
 C
       IMPLICIT DOUBLE PRECISION (A-H,O-Z)
 C
       CHARACTER*4 ATMSYM(*)
-!JT   CHARACTER*4 BFNAM1(35) !JT
-      CHARACTER*5 BFNAM1(35) !JT
+      CHARACTER*4 BFNAM1(35)
       CHARACTER*6 BFNAM2(49)
       CHARACTER*4 ATMLAB(106),BONDF,LABEL
-!JT   CHARACTER*8 BFL
-      CHARACTER*9 BFL !JT
+      CHARACTER*8 BFL
 C
       PARAMETER (MXATM=2000, MXSH=5000, MXGTOT=20000, MXAO=8192)
-
-      CHARACTER*9 BFLAB2(MXAO) !JT longer version of BFLAB
 C
       COMMON /ECP2  / CLP(400),ZLP(400),NLP(400),KFIRST(MXATM,6),
      *                KLAST(MXATM,6),LMAX(MXATM),LPSKIP(MXATM),
@@ -1949,24 +1940,15 @@ C
      *                CF(MXGTOT),CG(MXGTOT),CH(MXGTOT),CI(MXGTOT),
      *                KSTART(MXSH),KATOM(MXSH),KTYPE(MXSH),KNG(MXSH),
      *                KLOC(MXSH),KMIN(MXSH),KMAX(MXSH),NSHELL
-!JT   COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
-      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO), !JT
-     *                BFLAB2 !JT
+      COMMON /RUNLAB/ TITLE(10),ANAM(MXATM),BNAM(MXATM),BFLAB(MXAO)
 C
-!JT   DATA BFNAM1/'  S ','  X ','  Y ','  Z ',
-!JT  *            ' XX ',' YY ',' ZZ ',' XY ',' XZ ',' YZ ',
-!JT  *            ' XXX',' YYY',' ZZZ',' XXY',' XXZ',
-!JT  *            ' YYX',' YYZ',' ZZX',' ZZY',' XYZ',
-!JT  *            'XXXX','YYYY','ZZZZ','XXXY','XXXZ',
-!JT  *            'YYYX','YYYZ','ZZZX','ZZZY','XXYY',
-!JT  *            'XXZZ','YYZZ','XXYZ','YYXZ','ZZXY'/
-      DATA BFNAM1/'  S  ','  X  ','  Y  ','  Z  ',
-     *            ' XX  ',' YY  ',' ZZ  ',' XY  ',' XZ  ',' YZ  ',
-     *            ' XXX ',' YYY ',' ZZZ ',' XXY ',' XXZ ',
-     *            ' YYX ',' YYZ ',' ZZX ',' ZZY ',' XYZ ',
-     *            ' XXXX',' YYYY',' ZZZZ',' XXXY',' XXXZ',
-     *            ' YYYX',' YYYZ',' ZZZX',' ZZZY',' XXYY',
-     *            ' XXZZ',' YYZZ',' XXYZ',' YYXZ',' ZZXY'/ !JT add blank
+      DATA BFNAM1/'  S ','  X ','  Y ','  Z ',
+     *            ' XX ',' YY ',' ZZ ',' XY ',' XZ ',' YZ ',
+     *            ' XXX',' YYY',' ZZZ',' XXY',' XXZ',
+     *            ' YYX',' YYZ',' ZZX',' ZZY',' XYZ',
+     *            'XXXX','YYYY','ZZZZ','XXXY','XXXZ',
+     *            'YYYX','YYYZ','ZZZX','ZZZY','XXYY',
+     *            'XXZZ','YYZZ','XXYZ','YYXZ','ZZXY'/
       DATA BFNAM2/' XXXXX',' YYYYY',' ZZZZZ',' XXXXY',' XXXXZ',
      *            ' YYYYX',' YYYYZ',' ZZZZX',' ZZZZY',' XXXYY',
      *            ' XXXZZ',' YYYXX',' YYYZZ',' ZZZXX',' ZZZYY',
@@ -2020,15 +2002,6 @@ C
          MAXI = KMAX(II)
          DO 110 I = MINI,MAXI
             N = N+1
-c From gameess04_modified:
-!!JT        WRITE(UNIT=BFL,FMT='(A2,I2,A4)') LABEL,MOD(IAT,100),BFNAM(I)
-!!JT        READ (UNIT=BFL,FMT='(A8)') BFLAB(N)
-!           WRITE(UNIT=BFL,FMT='(A2,I2,A5)') LABEL,MOD(IAT,100),BFNAM(I) !JT
-!!JT        WRITE(6,'(A,A9)') 'BFL=',BFL !JT
-!           READ (UNIT=BFL,FMT='(A8)') BFLAB(N) !JT
-!           READ (UNIT=BFL,FMT='(A9)') BFLAB2(N) !JT
-!!JT        WRITE(6,'(A,A8)') 'BFLAB(N)=',BFLAB(N) !JT
-!!JT        WRITE(6,'(A,A9)') 'BFLAB2(N)=',BFLAB2(N) !JT
             IF(I.LE.35) THEN
                WRITE(UNIT=BFL,FMT='(A2,I2,A4)')
      *                      LABEL,MOD(IAT,100),BFNAM1(I)
@@ -2037,7 +2010,6 @@ c From gameess04_modified:
      *                      LABEL,BFNAM2(I-35)
             END IF
             READ (UNIT=BFL,FMT='(A8)') BFLAB(N)
-            READ (UNIT=BFL,FMT='(A8)') BFLAB2(N)            !JT
 C
 C              STORES ATOM CENTER FOR ELONGATION METHOD
             IATM(N) = IAT

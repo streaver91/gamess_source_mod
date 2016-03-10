@@ -504,8 +504,6 @@ C
       NZ2SRT=0
       CUTOFF = TEN**(-ICUT)
       THRSH = TEN*CUTOFF
-
-
       NCORBS = 0
       DO I = 1,NORBMX
          IF (MAP(I) .LT. 0) NCORBS = NCORBS+1
@@ -782,31 +780,11 @@ C     RATHER SMALL INTEGRALS ARE DISCARDED RATHER THAN BOMBING THE JOB
 C
       IF (LSYM .NE. IJKSYM) THEN
          IF(ABS(VAL).LT.THRSH) RETURN
-! JT 7 Sep 2005 beg
-! manually increased threshold  for check on integrals
-! that should be zero by symmetry
-!      THRSHJT=1.E-6   !JT
-!         WRITE(IW,*) 'WARNING: THRESHOLD FOR TESTING IF',
-!     > ' INTEGRALS ARE CORRECTLY ZERO SET TO ', THRSHJT,
-!     > ' by J. TOULOUSE'
-!         IF(ABS(VAL).LT.THRSHJT) RETURN
-! JT 7 Sep 2005 end
          IBAD = I0+NCORBS
          JBAD = J0+NCORBS
          KBAD = K0+NCORBS
          LBAD = L0+NCORBS
          IF (MASWRK) WRITE(IW,9068) VAL,IBAD,JBAD,KBAD,LBAD
-! JT 7 Sep 2005 beg
-! manually increased threshold  for check on integrals
-! that should be zero by symmetry
-       WRITE(IW,*) 'THRESHOLD USED=',THRSH   !JT
-       THRSHJT=1.E-6   !JT
-       WRITE(IW,*) 'WARNING: INCREASE THRESHOLD UP TO',
-     > THRSHJT
-       IF(ABS(VAL).LT.THRSHJT) RETURN
-! JT 7 Sep 2005 end
-         WRITE(IW,*) 'CRASH 1' !JT
-!JT        WRITE(IW,*) 'WARNING: FORCE GAMESS TO CONTINUE' !JT
          CALL ABRT
       END IF
       KSMPT = KK+KLOFF(IJSYM)
@@ -1072,8 +1050,6 @@ C
          KBAD = K0+NCORBS
          LBAD = L0+NCORBS
          IF (MASWRK) WRITE(IW,9068) VAL,IBAD,JBAD,KBAD,LBAD
-         WRITE(IW,*) 'THRSH=',THRSH   !JT
-         WRITE(IW,*) 'CRASH 2' !JT
          CALL ABRT
       END IF
       KSMPT = KK+KLOFF(IJSYM)
