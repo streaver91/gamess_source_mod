@@ -5831,7 +5831,18 @@ C
 C
  1300          CONTINUE
                C1=CDINP(IG)
+!JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN          !JT fp
+               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                         !JT
+             WRITE(IW,9141) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+                 IS_NEXT_FUNCTION = 0                                   !JT
+              ELSE                                                      !JT
+               WRITE(IW,9142) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+              ENDIF                                                     !JT
+             ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
+             ENDIF                                                      !JT
+!JT end
 C
                IF(EXCORR.AND.MASWRK)THEN
                IF(ISPHER.EQ.1)THEN
