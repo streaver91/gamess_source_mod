@@ -5684,6 +5684,15 @@ C
  1270    CONTINUE
          DO 1400 ISH = NS1,NS2
             WRITE (IW,9130)
+!JT beg
+! here before each new (contracted) basis function
+! IS_NEXT_FUNCTION is a flag to locate next basis function
+! ISTO2 is the index of current Slater function
+!           WRITE (IW,*) 'BEGIN NEW FUNCTION' !JT
+            IS_NEXT_FUNCTION = 1    !JT
+            ISTO2 = ISTO2 + 1   !JT
+!JT end
+
             I1 = KSTART(ISH)
             I2 = I1+KNG(ISH)-1
             ITYP = INTYP(ISH)
