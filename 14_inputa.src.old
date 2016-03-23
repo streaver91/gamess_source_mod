@@ -1255,7 +1255,7 @@ C                      SKIP OVER 'STO' TO POSITION SCALE FACTORS
                IF(STOTYP) CALL GSTRNG(CTYPE,KSIZE)
             ELSE
                CALL REREAD
-C              IGAUSS = IFIND('NGAUSS  ',IERR)
+               IGAUSS = IFIND('NGAUSS  ',IERR)
                              IF(IERR.NE.0) CALL ABRT
                KSIZE = -8
                CALL GSTRNG(CBASIS,KSIZE)
@@ -1264,7 +1264,7 @@ C              IGAUSS = IFIND('NGAUSS  ',IERR)
          END IF
          DO 210 I=1,4
             SCFAC(I) = RFIND('SCFAC   ',IERR)
-            IF(IERR.NE.0) CALL ABRT
+                       IF(IERR.NE.0) CALL ABRT
   210    CONTINUE
       END IF
 C                               BASIS TO BE READ FROM EXTERNAL FILE
@@ -1920,9 +1920,9 @@ C      GETS SEPARATE STORAGE OF ITS EXPONENTS/CONTRACTION COEFFS,
 C      STORED AT DIFFERENT -KSTART- VALUES.
 C
   500 CONTINUE
+      NSHELL = NSHELL + 1
       ISTO1 = ISTO1 + 1                 !JT fp
       STO_EXPO(ISTO1) = 0               !JT fp
-      NSHELL = NSHELL + 1
       IF(NSHELL.GT.MXSH) GO TO 1560
       KMIN(NSHELL) = MINF(ITYP)
       KMAX(NSHELL) = MAXF(ITYP)
@@ -2065,6 +2065,7 @@ C     EXPLICITLY INPUT BY MEANS OF 1S, 2S, 2P, 2SP, ... SHELLS
 C     THIS IS AN UNDOCUMENTED INPUT OPTION.
 C
   600 CONTINUE
+
 !JT fp beg, Flags for STO-NG and GS basis sets
       IF(ITYP.GE.9 .AND. ITYP.LE.29) then
         IS_STONG=1
@@ -2074,27 +2075,28 @@ C
          IS_GSTO=1
       ENDIF
 !JT fp end
+
       ATNUM = ZNUC
       NUCZ = INT(ATNUM)
       IF(NUCZ .GT. 54) THEN
          IF(MASWRK) WRITE(IW,*) 'STO-NG BASES EXIST ONLY TO Z=54 (XE)'
          CALL BERROR(1)
       END IF
-      DO 634 I = 1,IGAUSS
+      DO 630 I = 1,IGAUSS
          EXX(I) = ZERO
          CSS(I) = ZERO
          CPP(I) = ZERO
          CDD(I) = ZERO
          CFF(I) = ZERO !JT add 4F
          CGG(I) = ZERO !JT add 5G
-  634 CONTINUE
+  630 CONTINUE
       IBRNCH = ITYP-8
 C
       GO TO (601,602,603,604,605,606,607,608,609,610,611,
 !JT  *       612,613,614,615,616,617,618,619), IBRNCH
      *       612,613,614,615,616,617,618,619,
      *       621,622,                                     !JT add 4F and 5P
-     *       623,624,625,626,627,628,629,630,631,632), IBRNCH         !fp add GS basis and stop if exceeded
+     *       623,624,625,626,627,628,629,633,631,632), IBRNCH         !fp add GS basis and stop if exceeded !JL change line num
 C
   601 CALL S1S(EXX,CSS,IGAUSS)
       STOSC = STOSF(NUCZ,1,0)
@@ -2172,6 +2174,7 @@ C
       STOSC = STOSF(NUCZ,4,0)
       GO TO 640
 C
+C Not yet implemented by GAMESS authors       !JT
   619 CONTINUE
       IF(MASWRK) WRITE(IW,*) 'UNRECOGNIZABLE STO-NG TYPE'
       CALL BERROR(1)
@@ -2207,7 +2210,7 @@ C
   629 CALL GS3P(EXX,CPP,IGAUSS) !fp gs-3p type
       GO TO 640
 C
-  630 CALL GS4P(EXX,CPP,IGAUSS) !fp gs-4p type
+  633 CALL GS4P(EXX,CPP,IGAUSS) !fp gs-4p type !JL change line num
       GO TO 640
 C
   631 CALL GS4D(EXX,CDD,IGAUSS) !fp gs-4d type
@@ -2215,8 +2218,11 @@ C
 C
   632 CALL BERROR(1)
       stop
+
   640 CONTINUE
+
       IF(SCFAC(1) .GT. ZERO) STOSC=SCFAC(1)
+
 !JT beg
 ! Save Slater exponents
 !     WRITE(IW,*)'ATOMS: STOSC=',STOSC !JT
@@ -2246,6 +2252,8 @@ C     FOR D SHELLS, THE INPUT COEFFICIENTS CD MUST BE THE COEFFICIENTS
 C     CORRESPONDING TO THE NORMALIZED PRIMITIVE X**2 *EXP(-A*R**2).
 C
   700 CONTINUE
+C!fp note that the normalization includes the normalization of
+C!fp both the spherical harmonics and the radial function
       IF(NORMP .EQ. 1) GO TO 730
       DO 720 IG = K1,K2
          EE = EX(IG)+EX(IG)
@@ -2458,6 +2466,15 @@ C
             ELSE
                IF(TEST .LE. 1.0D-12) GO TO 820
             END IF
+C            THRESHOLD=1.0D-08 !JT
+C            WRITE(6,*) 'TEST=',TEST
+C            IF(TEST .LE. THRESHOLD) THEN   !JT
+C             WRITE(6,*) '!!! WARNING: NUMERICAL TEST FOR IDENTIFYING'
+C             WRITE(6,*) 'SYMMETRIC ATOMS INCREASED TO ',THRESHOLD
+C             WRITE(6,*) 'J. TOULOUSE, 24 NOV 2006'
+C             WRITE(6,*) 'END WARNING !!!'
+C             GO TO 820                   !JT
+C            ENDIF                        !JT
   810    CONTINUE
          NUAT = NAT
          NAT = NAT+1
@@ -5641,7 +5658,7 @@ C
       END IF
       IF(NORMP .NE. 1) WRITE (IW,9090)
       IF(NORMF .NE. 1) WRITE (IW,9100)
-C     WRITE (IW,9110)
+
       IF(IS_STONG .EQ. 1) THEN !JT
         WRITE (IW,9111)        !JT
       ELSEIF(IS_GSTO .EQ. 1) THEN    !fp
@@ -5649,6 +5666,7 @@ C     WRITE (IW,9110)
       ELSE                     !JT
         WRITE (IW,9110)
       ENDIF                    !JT
+
       MLDUDF=0
       MLDNDA=0
 C
@@ -5766,10 +5784,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
           IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT !fp
            IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-            WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT
+            WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT !JL
             IS_NEXT_FUNCTION = 0 !JT
            ELSE                                                      !JT
-            WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+            WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
            ENDIF                                                     !JT
           ELSE                                                       !JT
             WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5796,10 +5814,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5826,10 +5844,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
               IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN          !JT fp
                IF(IS_NEXT_FUNCTION .EQ. 1) THEN                         !JT
-             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5861,10 +5879,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT
+             WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1!JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -5891,10 +5909,10 @@ C
 !JT            WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
              IF((IS_STONG .EQ. 1) .or. (IS_GSTO .EQ. 1)) THEN           !JT fp
               IF(IS_NEXT_FUNCTION .EQ. 1) THEN                          !JT
-            WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT
+            WRITE(IW,9143) ISH,LABEL(ITYP),IG,STO_EXPO(ISTO2),EX(IG),C1 !JT !JL
                  IS_NEXT_FUNCTION = 0                                   !JT
               ELSE                                                      !JT
-               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT
+               WRITE(IW,9144) ISH,LABEL(ITYP),IG,EX(IG),C1              !JT !JL
               ENDIF                                                     !JT
              ELSE                                                       !JT
                WRITE(IW,9140) ISH,LABEL(ITYP),IG,EX(IG),C1
@@ -6088,8 +6106,8 @@ C        RIGIDLY UNCHANGEABLE PART OF THIS FORMAT STATEMENT:
  9140 FORMAT(1X,I6,3X,A2,I7,F22.7,2F18.12)
  9141 FORMAT(I6,3X,A2,x,i1)
  9142 FORMAT(3e36.25)
- 9143 FORMAT(1X,I3,3X,A5,I4,F22.7,F22.7,4F20.12)                        !JT !fp
- 9144 FORMAT(1X,I3,3X,A5,I4,22X,F22.7,4F20.12)                          !JT !fp
+ 9143 FORMAT(1X,I3,3X,A5,I4,F22.7,F22.7,4F20.12)                        !JT !fp !JL
+ 9144 FORMAT(1X,I3,3X,A5,I4,22X,F22.7,4F20.12)                          !JT !fp !JL
       END
 C*MODULE INPUTA  *DECK PRTSTAT
       SUBROUTINE PRTSTAT(NFG)
