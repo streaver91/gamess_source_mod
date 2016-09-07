@@ -5595,7 +5595,8 @@ C
       LOGICAL FRNDLY,SECONDD,EXCORR,GOPARR,MASWRK,DSKWRK
       CHARACTER*8 MLDLAB
       CHARACTER*4 ATMSYM(MXATM)
-      DOUBLE PRECISION LABEL(27)
+! JL  DOUBLE PRECISION LABEL(27)
+      DOUBLE PRECISION LABEL(38) ! JL: Add space for SG basis.
       COMMON /BASSPH/ QMTTOL,ISPHER
       COMMON /CIFILS/ NFT11,NFT12,NFT13,NFT14,NFT15,NFT16,IDAF20,NEMEMX
       COMMON /CXTHRM/ CXTHERM(11),CXZPE,METHCX,ICXBAS,ICXPCM,SECONDD
@@ -5624,7 +5625,11 @@ C
      *           8H1S      ,8H2S      ,8H2P      ,8H2SP     ,
      *           8H3S      ,8H3P      ,8H3D      ,8H3SP     ,8H3SPD    ,
      *           8H4S      ,8H4P      ,8H4D      ,8H4SP     ,8H4SPD    ,
-     *           8H5S      ,8H5P      ,8H5D      ,8H5SP     ,8H5SPD    /
+!JT  *           8H5S      ,8H5P      ,8H5D      ,8H5SP     ,8H5SPD    /
+     *           8H5S      ,8H5P      ,8H5D      ,8H5SP     ,8H5SPD    ,
+     *           8H4F      ,8H5G      ,                                  !JT add 4F and 5G
+     *           8HGS-S    ,8HGS-P    ,8HGS-D    ,8HGS-F    ,8HGS-G    ,
+     *           8HGS-3S   ,8HGS-3P   ,8HGS-4P   ,8HGS-4D   /            !fp added labels for new basis functions
 C
 C     ----- PRINT OUT THE BASIS FUNCTIONS USED -----
 C
@@ -6161,7 +6166,8 @@ C
       IMPLICIT DOUBLE PRECISION (A-H,O-Z)
       PARAMETER (MXSH=5000, MXAO=8192, MXATM=2000)
 C
-      DOUBLE PRECISION LABEL(27)
+! JL  DOUBLE PRECISION LABEL(27)
+      DOUBLE PRECISION LABEL(38) ! JL: Add space for SG basis.
 C
       COMMON /INFOA / NAT,ICH,MUL,NUM,NQMT,NE,NA,NB,
      *                ZAN(MXATM),C(3,MXATM),IAN(MXATM)
@@ -6197,7 +6203,11 @@ C
      *           8H1S      ,8H2S      ,8H2P      ,8H2SP     ,
      *           8H3S      ,8H3P      ,8H3D      ,8H3SP     ,8H3SPD    ,
      *           8H4S      ,8H4P      ,8H4D      ,8H4SP     ,8H4SPD    ,
-     *           8H5S      ,8H5P      ,8H5D      ,8H5SP     ,8H5SPD    /
+!JT  *           8H5S      ,8H5P      ,8H5D      ,8H5SP     ,8H5SPD    /
+     *           8H5S      ,8H5P      ,8H5D      ,8H5SP     ,8H5SPD    ,
+     *           8H4F      ,8H5G      ,                                  !JT add 4F and 5G
+     *           8HGS-S    ,8HGS-P    ,8HGS-D    ,8HGS-F    ,8HGS-G    ,
+     *           8HGS-3S   ,8HGS-3P   ,8HGS-4P   ,8HGS-4D   /            !fp added labels for new basis functions
 C
 C     ----- PRINT OUT STO-NG APPROXIMATIONS TO STO BASIS SETS -----
 C
